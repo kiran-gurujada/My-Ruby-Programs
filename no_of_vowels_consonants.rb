@@ -1,8 +1,8 @@
 console = ">"
 
-puts "Hey! Enter a sentence or word, I will tell you how many e's there are"
+puts "Hey! Enter a sentence or word, I will tell you how many Vowels and Consonants there are"
 print console
-x = gets.chomp.downcase
+x = gets.chomp.delete(' ').downcase
 k = x.length
 i = 0
 vowelCount = 0
@@ -12,4 +12,4 @@ vowelCount = 0
     vowelCount +=1 if isVowel == true
   end
 
-puts "There are #{vowelCount} vowels and #{ k - vowelCount} consonants"
+puts "There are #{ vowelCount } vowels and #{ k - vowelCount } consonants"
