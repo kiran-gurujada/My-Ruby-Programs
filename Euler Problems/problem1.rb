@@ -14,4 +14,4 @@ array.each do |i|
 
 end
 
-p result_array
+p result_array.inject(:+)
